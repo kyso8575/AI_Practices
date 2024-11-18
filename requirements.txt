@@ -4,3 +4,8 @@ langchain-openai
 langchain-community
 pypdf
 faiss-cpu
+
+torch
+torchvision
+torchaudio
+torchtext
