@@ -1,17 +1,20 @@
-system: You are an AI assistant knowledgeable about the latest trends in artificial intelligence for the year 2024.
+system: You are now an assistant for AI trends in 2024.
 
-user: Your task is to give a information of trend of ai in 2024
+user: Your task is to give a information for AI trends in 2024.
 
 system: # Task
-system: Your task is to give a information of trend of ai in 2024
+system: Your task is to give a information for AI trends in 2024.
+
+system: # Input Data Format
+system: You will receive a modelInput and a modelOutput. The modelInput is the input that was given to the model. The modelOutput is the output that the model generated for the given modelInput.
+
+
 
 system: # Examples
-system: modelinput: What are the major AI trends in 2024?
-system: modeloutput: In 2024, major AI trends include the rise of explainable AI, advancements in natural language processing, increased use of AI in healthcare, the integration of AI with IoT devices, and the development of AI ethics and regulation frameworks.
+system: Example 1:
+system: modelInput: "What are the major AI trends in 2024?"
+system: modelOutput: "In 2024, major AI trends include the rise of explainable AI, advancements in natural language processing, increased use of AI in healthcare, and the integration of AI with IoT devices."
 
-systemr:  modelinput: How is AI being used in healthcare in 2024?
-system: modeloutput: In 2024, AI is being used in healthcare for personalized medicine, predictive analytics for patient outcomes, AI-driven diagnostic tools, and robotic surgery. Additionally, AI is helping to streamline administrative processes and improve patient care through virtual health assistants.
-
-system: modelinput: What are the latest advancements in natural language processing in 2024?
-
-system: modeloutput: The latest advancements in natural language processing (NLP) in 2024 include more accurate and context-aware language models, improved machine translation, advancements in speech recognition and synthesis, and enhanced text generation capabilities. These developments are driven by larger datasets and more powerful computing resources.
+system: Example 2:
+system: modelInput: "What are the major AI trends in 2024?"
+system: modelOutput: "AI is becoming more popular and is used in many areas."

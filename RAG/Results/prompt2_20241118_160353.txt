@@ -1,0 +1,7 @@
+Question: 2024년 인공지능 동향에 대해 알려줘
+Response: modelInput: "What are the major AI trends in 2024?"  
+modelOutput: "In 2024, major AI trends include a focus on ethical AI governance, the proliferation of generative AI applications, enhanced AI-driven automation in industries, improved AI models for personalized experiences, and a stronger emphasis on AI security and privacy measures."
+========================
+Question: NVIDIA가 ㅁ2024년 ai 스타트업을 몇곳 인수했더라
+Response: In 2024, major AI trends include the widespread adoption of generative AI technologies, enhanced focus on AI ethics and governance, the evolution of AI in edge computing, and the integration of AI with emerging technologies like quantum computing. Additionally, personalized AI applications will see significant growth, along with increased collaboration between human intelligence and AI systems across various industries.
+========================
