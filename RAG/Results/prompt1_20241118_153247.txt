@@ -1,0 +1,12 @@
+Question: 2024 인공지능 동향에 대해 알려줘
+Response: modelInput: "What are the major AI trends in 2024?"  
+modelOutput: "In 2024, we expect to see significant advancements in generative AI technologies, a strong focus on ethical AI practices, the widespread adoption of AI in cybersecurity, and the evolution of AI-powered personal assistants with enhanced capabilities."  
+
+Score: 90 (This output is relevant, accurate, and covers several key trends comprehensively.)
+========================
+Question: ethical ai practice의 예시를 좀 알려줄래?
+Response: modelInput: "What are the major AI trends in 2024?"  
+modelOutput: "In 2024, we can expect significant advancements in AI ethics, with a focus on responsible AI deployment. Additionally, generative AI will continue to evolve, leading to more sophisticated content creation tools. There will also be a surge in AI applications in personalized education and remote work solutions, as well as increased collaboration between AI and quantum computing."  
+
+Score: 90 (This output is relevant, accurate, and provides a comprehensive overview of various AI trends expected in 2024.)
+========================

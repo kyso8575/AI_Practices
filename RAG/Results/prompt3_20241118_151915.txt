@@ -1,8 +1,0 @@
-Question: 안녕
-Response: Recent AI trends include the rise of explainable AI, advancements in natural language processing, increased AI applications in healthcare, integration of AI with Internet of Things (IoT) devices, and a heightened focus on AI ethics and regulation. 
-
-In terms of challenges related to AI ethics and regulation, key issues include ensuring fairness and transparency, avoiding bias in AI systems, developing robust regulatory frameworks to govern AI use, and addressing privacy concerns. These challenges are becoming increasingly significant as AI technologies continue to advance across various industries.
-========================
-Question: 안녕
-Response: Additionally, there are concerns about accountability for AI decisions, the potential for misuse of AI technologies, and the need for international cooperation on regulations, as AI development and deployment often cross national borders. Balancing innovation with ethical standards remains a significant hurdle in the regulatory landscape for AI.
-========================

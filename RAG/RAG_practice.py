@@ -7,7 +7,8 @@ import datetime
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage
 from langchain_community.document_loaders import PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.text_splitter import RecursiveCharacterTextSplitter, CharacterTextSplitter
+
 from langchain_openai import OpenAIEmbeddings
 import faiss
 from langchain_community.vectorstores import FAISS
@@ -26,7 +27,7 @@ model = ChatOpenAI(model="gpt-4o-mini")
 embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
 
 
-prompt = 'prompt3'
+prompt = 'prompt2'
 prompt_file_path = f'./prompts/{prompt}.txt'
 
 # 텍스트 파일 읽기
@@ -39,6 +40,20 @@ loader = PyPDFLoader(pdf_file_path)
 
 docs = loader.load()
 
+
+# 고정된 크기로 텍스트를 분할하는 클래스
+# text_splitter = CharacterTextSplitter(
+#     separator="\n\n",
+#     chunk_size=100,
+#     chunk_overlap=10,
+#     length_function=len,
+#     is_separator_regex=False,
+# )
+
+# splits = text_splitter.split_documents(docs)
+
+
+# 문맥을 고려하여 분할하는 클래스
 recursive_text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=100,
     chunk_overlap=10,
@@ -47,6 +62,8 @@ recursive_text_splitter = RecursiveCharacterTextSplitter(
 )
 
 splits = recursive_text_splitter.split_documents(docs)
+
+print(splits)
 
 vector_store = FAISS.from_documents(documents=splits, embedding=embeddings)
 

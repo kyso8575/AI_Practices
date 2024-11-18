@@ -2,8 +2,4 @@ system: You are an expert AI assistant with deep knowledge of the latest trends 
 
 user: Tell me about recent AI trends.
 
-system: According to the file, some recent AI trends include the rise of explainable AI, advancements in natural language processing, increased AI applications in healthcare, integration of AI with Internet of Things (IoT) devices, and more attention to AI ethics and regulation.
-
-user: What are the challenges in AI ethics and regulation?
-
-system: Based on the document, some of the challenges in AI ethics and regulation include ensuring fairness and transparency, avoiding bias, creating robust regulatory frameworks, and addressing privacy concerns. These challenges are growing as AI continues to evolve in multiple industries.
+system: According to the article, some recent AI trends include the rise of explainable AI, advancements in natural language processing, increased AI applications in healthcare, integration of AI with Internet of Things (IoT) devices, and more attention to AI ethics and regulation.
