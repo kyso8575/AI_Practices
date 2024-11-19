@@ -17,17 +17,19 @@ transform = transforms.Compose([
 ])
 
 
-# Use MNIST dataset
+# Download and Use MNIST dataset
 trainset = torchvision.datasets.MNIST(root='./data', train=True, download=True, transform=transform)
+
+# Trainset을 학습하기 쉽게 변환, 배치로 나눠주고 섞어주고.
 trainloader = torch.utils.data.DataLoader(trainset, batch_size=64, shuffle=True)
 
 testset = torchvision.datasets.MNIST(root='./data', train=False, download=True, transform=transform)
 testloader = torch.utils.data.DataLoader(testset, batch_size=64, shuffle=False)
 
 
+# 데이터 확인
 sample_data, sample_label = trainset[0]
-
-print(f'Sample data shape: {sample_data}') # torch.Size 1, 28, 28
+print(f'Sample data shape: {sample_data.shape}') # torch.Size 1, 28, 28
 print(f'Sample label: {sample_label}') # 5
 
 # Define ANN model
@@ -49,7 +51,7 @@ class SimpleANN(nn.Module):
 # 모델 초기화
 model = SimpleANN()
 
-# 손실 함수와 최적화 알고리즘 정의
+# Loss Function & Optimizer
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
 
@@ -77,7 +79,7 @@ for epoch in range(10):  # 10 에포크 동안 학습
 print('Finished Training')
 
 
-
+# Evaluation
 correct = 0
 total = 0
 
@@ -90,4 +92,5 @@ with torch.no_grad(): # 평가에는 기울기 계산이 필요하지 않음
         correct += (predicted == labels).sum().item()
 
 print(f'Accuracy of the network on the 10000 test images: {100 * correct / total:.2f}%')
+
 # Accuracy of the network on the 10000 test images: 97.00%
