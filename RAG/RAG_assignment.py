@@ -63,7 +63,7 @@ recursive_text_splitter = RecursiveCharacterTextSplitter(
 
 splits = recursive_text_splitter.split_documents(docs)
 
-print(splits)
+# print(splits)
 
 vector_store = FAISS.from_documents(documents=splits, embedding=embeddings)
 
@@ -76,6 +76,7 @@ messages = [
     if line.startswith("system:") or line.startswith("user:")
 ]
 
+print(messages)
 
 # ChatPromptTemplate 생성
 contextual_prompt = ChatPromptTemplate.from_messages(messages)

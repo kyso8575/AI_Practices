@@ -1,3 +1,5 @@
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -164,3 +166,4 @@ cython_debug/
 
 # Deep_Learning/data 폴더를 Git에서 제외
 Deep_Learning/data/
+
